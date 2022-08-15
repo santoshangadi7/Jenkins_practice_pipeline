@@ -12,7 +12,7 @@ pipeline {
                 sh '''
                 #!/bin/bash
                 echo "its deploy stage"
-                sleep 5
+                sleep 10
                 pwd
                 ls
                 '''
