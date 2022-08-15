@@ -3,13 +3,14 @@ pipeline {
     stages {
         stage ('BUILD') {
             steps {
-                 echo "its build stage "
-                  }
-        }
+               
+            echo "its build stage "
+            }
+            }
         stage ('DEPLOY') {
             steps {
-                #!/bin/bash
                 sh '''
+                #!/bin/bash
                 echo "its deploy stage"
                 sleep 5
                 pwd
@@ -18,7 +19,6 @@ pipeline {
             }
         }    
             
-        
+        }
     
-    }
-}       
+    }       
